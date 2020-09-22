@@ -23,17 +23,20 @@
 
 <body>
     <div class="container">
-        <div style="border: 1px solid #ccc; height: 40vh; text-align: right;" id="chatbot">
-
+        <div style="border: 1px solid #ccc; height: 40vh; text-align: right;">
+            <p id="chatbot"></p>
         </div>
         <div>
-        <input type="text" class="form-control" placeholder="Type your message here" id="msg"/>
-        <button class="btn btn-default" id="send">Send</button>
+            <input type="text" class="form-control" placeholder="Type your message here" id="msg"/>
+            <button class="btn btn-danger" onclick="send()">Send</button>
         </div>
     </div>
 </body>
 <script>
-    var x;
-
+    function send() {
+     var message = msg.value;
+     document.getElementById("chatbot").innerHTML = message;
+     document.getElementById
+    }
 </script>
 </html>
